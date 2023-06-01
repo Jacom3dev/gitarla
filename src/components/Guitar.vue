@@ -5,6 +5,8 @@
             required: true
         }
     });
+
+    defineEmits(['add']);
 </script>
 
 <template>
@@ -19,6 +21,7 @@
             <button 
                 type="button"
                 class="btn btn-dark w-100 "
+                @click="$emit('add',guitar)"
             >Agregar al Carrito</button>
         </div>
     </div>
